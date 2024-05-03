@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{9EEDCCAA-2E2E-44F7-A719-298992FF4639}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "application", "application", "{934D0E13-570B-4050-87F5-797D3E540DA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "domain", "domain", "{B5DC7E21-6D45-45EE-A23E-A6274CEA6AC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "persistance", "persistance", "{F1C0C99E-A2EC-42F9-A283-E1A58516107B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demokrata.SystemSettings.Domain", "domain\Demokrata.SystemSettings.Domain\Demokrata.SystemSettings.Domain.csproj", "{6E2C0784-D79F-4E53-BDE3-B74BFFD51290}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demokrata.SystemSettings.Persistance", "persistance\Demokrata.SystemSettings.Persistance\Demokrata.SystemSettings.Persistance.csproj", "{1F48C0CA-791F-480C-8687-C6C3C6484EE7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demokrata.SystemSettings.Application", "application\Demokrata.SystemSettings.Application\Demokrata.SystemSettings.Application.csproj", "{659E71D9-9501-42F9-866B-23149989F6FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demokrata.SystemSettings.Api", "api\Demokrata.SystemSettings.Api\Demokrata.SystemSettings.Api.csproj", "{3543B6AF-EA4E-4AE1-B1B7-9642C690CA4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{427BBE85-179F-4E48-AA61-70540112F6BB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8B70451F-8730-4E9A-B14D-703D2DB2863D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demokrata.SystemSettings.Application.Test", "tests\Demokrata.SystemSettings.Application.Test\Demokrata.SystemSettings.Application.Test.csproj", "{FA029ADB-DFCD-4450-B90C-D96547E3851F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demokrata.SystemSettings.IntegrationTest", "tests\Demokrata.SystemSettings.IntegrationTest\Demokrata.SystemSettings.IntegrationTest.csproj", "{F8D1A43E-1948-449C-A219-CE61436C2A52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E2C0784-D79F-4E53-BDE3-B74BFFD51290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2C0784-D79F-4E53-BDE3-B74BFFD51290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2C0784-D79F-4E53-BDE3-B74BFFD51290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2C0784-D79F-4E53-BDE3-B74BFFD51290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F48C0CA-791F-480C-8687-C6C3C6484EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F48C0CA-791F-480C-8687-C6C3C6484EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F48C0CA-791F-480C-8687-C6C3C6484EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F48C0CA-791F-480C-8687-C6C3C6484EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{659E71D9-9501-42F9-866B-23149989F6FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{659E71D9-9501-42F9-866B-23149989F6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{659E71D9-9501-42F9-866B-23149989F6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{659E71D9-9501-42F9-866B-23149989F6FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3543B6AF-EA4E-4AE1-B1B7-9642C690CA4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3543B6AF-EA4E-4AE1-B1B7-9642C690CA4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3543B6AF-EA4E-4AE1-B1B7-9642C690CA4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3543B6AF-EA4E-4AE1-B1B7-9642C690CA4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA029ADB-DFCD-4450-B90C-D96547E3851F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA029ADB-DFCD-4450-B90C-D96547E3851F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA029ADB-DFCD-4450-B90C-D96547E3851F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA029ADB-DFCD-4450-B90C-D96547E3851F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D1A43E-1948-449C-A219-CE61436C2A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D1A43E-1948-449C-A219-CE61436C2A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D1A43E-1948-449C-A219-CE61436C2A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D1A43E-1948-449C-A219-CE61436C2A52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E2C0784-D79F-4E53-BDE3-B74BFFD51290} = {B5DC7E21-6D45-45EE-A23E-A6274CEA6AC0}
+		{1F48C0CA-791F-480C-8687-C6C3C6484EE7} = {F1C0C99E-A2EC-42F9-A283-E1A58516107B}
+		{659E71D9-9501-42F9-866B-23149989F6FA} = {934D0E13-570B-4050-87F5-797D3E540DA8}
+		{3543B6AF-EA4E-4AE1-B1B7-9642C690CA4C} = {9EEDCCAA-2E2E-44F7-A719-298992FF4639}
+		{FA029ADB-DFCD-4450-B90C-D96547E3851F} = {8B70451F-8730-4E9A-B14D-703D2DB2863D}
+		{F8D1A43E-1948-449C-A219-CE61436C2A52} = {8B70451F-8730-4E9A-B14D-703D2DB2863D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84B57C8D-F22E-4AFA-9AB3-13D42471ED6D}
+	EndGlobalSection
+EndGlobal

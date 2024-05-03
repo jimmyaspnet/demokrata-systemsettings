@@ -1,0 +1,14 @@
+<Project>
+	<PropertyGroup Label="General configs">
+		<TargetFramework>net8.0</TargetFramework>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+	<PropertyGroup Label="General packages">
+		<Xunit>2.5.3</Xunit>
+		<XunitRunner>2.5.3</XunitRunner>
+		<Moq>4.20.70</Moq>
+		<MicrosoftNETTestSdk>17.8.0</MicrosoftNETTestSdk>
+		<MicrosoftEntityFrameworkCoreInMemory>8.0.3</MicrosoftEntityFrameworkCoreInMemory>
+		<CoverletCollector>6.0.2</CoverletCollector>
+	</PropertyGroup>	
+</Project>
