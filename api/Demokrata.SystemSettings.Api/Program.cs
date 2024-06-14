@@ -1,5 +1,6 @@
 using Demokrata.SystemSettings.Application.Common.Interfaces;
 using Demokrata.SystemSettings.Persistance.Configuration;
+using Demokrata.SystemSettings.Infraestructure.Configuration;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ if (!isTest)
     builder.Services.AddPersistence(builder.Configuration);
 }
 
+builder.Services.AddInfraestructure(builder.Configuration);
 builder.Services.AddHealthChecks()
     .AddCheck("self", () => HealthCheckResult.Healthy())
     .AddMySql(builder.Configuration.GetConnectionString("Default"));

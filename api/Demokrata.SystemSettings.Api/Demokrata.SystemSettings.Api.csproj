@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\infraestructure\Demokrata.SystemSettings.Infraestructure\Demokrata.SystemSettings.Infraestructure.csproj" />
     <ProjectReference Include="..\..\persistance\Demokrata.SystemSettings.Persistance\Demokrata.SystemSettings.Persistance.csproj" />
   </ItemGroup>
 

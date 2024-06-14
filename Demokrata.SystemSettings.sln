@@ -31,6 +31,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demokrata.SystemSettings.Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demokrata.SystemSettings.IntegrationTest", "tests\Demokrata.SystemSettings.IntegrationTest\Demokrata.SystemSettings.IntegrationTest.csproj", "{F8D1A43E-1948-449C-A219-CE61436C2A52}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infraestructure", "infraestructure", "{3A62C714-4EB0-441F-B379-6FEE680FE9CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demokrata.SystemSettings.Infraestructure", "infraestructure\Demokrata.SystemSettings.Infraestructure\Demokrata.SystemSettings.Infraestructure.csproj", "{742A4144-F6CF-4A38-B0D1-A7B52A44E4C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,10 @@ Global
 		{F8D1A43E-1948-449C-A219-CE61436C2A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8D1A43E-1948-449C-A219-CE61436C2A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8D1A43E-1948-449C-A219-CE61436C2A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{742A4144-F6CF-4A38-B0D1-A7B52A44E4C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{742A4144-F6CF-4A38-B0D1-A7B52A44E4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{742A4144-F6CF-4A38-B0D1-A7B52A44E4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{742A4144-F6CF-4A38-B0D1-A7B52A44E4C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +80,7 @@ Global
 		{3543B6AF-EA4E-4AE1-B1B7-9642C690CA4C} = {9EEDCCAA-2E2E-44F7-A719-298992FF4639}
 		{FA029ADB-DFCD-4450-B90C-D96547E3851F} = {8B70451F-8730-4E9A-B14D-703D2DB2863D}
 		{F8D1A43E-1948-449C-A219-CE61436C2A52} = {8B70451F-8730-4E9A-B14D-703D2DB2863D}
+		{742A4144-F6CF-4A38-B0D1-A7B52A44E4C9} = {3A62C714-4EB0-441F-B379-6FEE680FE9CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {84B57C8D-F22E-4AFA-9AB3-13D42471ED6D}
