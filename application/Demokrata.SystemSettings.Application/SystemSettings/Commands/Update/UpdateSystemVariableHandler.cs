@@ -17,7 +17,7 @@ using Microsoft.EntityFrameworkCore;
 /// The handler to update a system setting
 /// </summary>
 /// <seealso cref="T" />
-public class UpdateSystemVariableHandler(IDataContext dataContext, IMediator mediator) : IRequestHandler<UpdateSystemVariable, UpdateSystemVariable>
+public class UpdateSystemVariableHandler(IDataContext dataContext, IMediator mediator, ILogService logService) : IRequestHandler<UpdateSystemVariable, UpdateSystemVariable>
 {
     /// <summary>
     /// The data context
@@ -28,6 +28,11 @@ public class UpdateSystemVariableHandler(IDataContext dataContext, IMediator med
     /// The mediator
     /// </summary>
     private readonly IMediator mediator = mediator;
+
+    /// <summary>
+    /// The log service
+    /// </summary>
+    private readonly ILogService logService = logService;
 
     /// <summary>
     /// Handles a request
@@ -49,6 +54,8 @@ public class UpdateSystemVariableHandler(IDataContext dataContext, IMediator med
         systemSetting.Value = request.Value;
         systemSetting.KeyWord = request.KeyWord;
         await this.dataContext.SaveChangesAsync(cancellationToken);
+
+        await this.logService.Exec(cancellationToken);
 
         var notification = new NotificationUpdate<SystemSetting>(systemSetting);
         await this.mediator.Publish(notification, cancellationToken);

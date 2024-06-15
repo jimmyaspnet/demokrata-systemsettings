@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Demokrata.SystemSettings.Application.Common.Interfaces;
 using Demokrata.SystemSettings.Infraestructure.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,7 +27,7 @@ public static class ServiceExtensions
     /// <returns></returns>
     public static IServiceCollection AddInfraestructure(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddHttpClient<LogService>(config =>
+        services.AddHttpClient<ILogService, LogService>(config =>
         {
             config.BaseAddress = new Uri(configuration["AppSettings:ApiUrlUsers"]);
         });

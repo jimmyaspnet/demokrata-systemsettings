@@ -7,8 +7,10 @@ namespace Demokrata.SystemSettings.Application.Test.SystemSettings.Update;
 using System.Net;
 using System.Threading.Tasks;
 using Demokrata.Core.Exceptions;
+using Demokrata.SystemSettings.Application.Common.Interfaces;
 using Demokrata.SystemSettings.Application.SystemSettings.Commands.Update;
 using Demokrata.SystemSettings.Application.Test.Configuration;
+using Moq;
 
 /// <summary>
 /// The unit test for the handler
@@ -34,7 +36,10 @@ public class UpdateSystemVariableHandlerTest : TestFactory
             Value = "Update value"
         };
 
-        var handler = new UpdateSystemVariableHandler(this.Context, this.Mediator);
+        var fakeService = new Mock<ILogService>();
+        fakeService.Setup(t => t.Exec(It.IsAny<CancellationToken>()));
+
+        var handler = new UpdateSystemVariableHandler(this.Context, this.Mediator, fakeService.Object);
 
         var result = await Assert.ThrowsAsync<HttpException>(async () => await handler.Handle(model, CancellationToken.None));
 
@@ -54,7 +59,10 @@ public class UpdateSystemVariableHandlerTest : TestFactory
             Value = "Update value"
         };
 
-        var handler = new UpdateSystemVariableHandler(this.Context, this.Mediator);
+        var fakeService = new Mock<ILogService>();
+        fakeService.Setup(t => t.Exec(It.IsAny<CancellationToken>()));
+
+        var handler = new UpdateSystemVariableHandler(this.Context, this.Mediator, fakeService.Object);
         var result = await handler.Handle(model, CancellationToken.None);
 
         Assert.NotNull(result);
